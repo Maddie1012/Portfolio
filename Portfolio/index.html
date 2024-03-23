@@ -36,16 +36,14 @@
 
         <main class="content">
             <section class="first-section">
+                <div class="first-section__text">
+                    <h1 class="text__header">Elias is a <span class="purple">web designer</span> and <span class="purple">front-end developer</span></h1>
 
-                <h1 class="first-section__header">Elias is a <span class="purple">web designer</span> and <span class="purple">front-end developer</span></h1>
+                    <p class="first-section__p">He crafts responsive websites where technologies meet creativity</p>
 
-                <p class="first-section__p">He crafts responsive websites where technologies meet creativity</p>
-
-                <button class="first-section__button">Contact me !!</button>
-                
+                    <button class="first-section__button">Contact me !!</button>
+                </div>
                 <img class="first-section__image" src="img/Group 46.png" alt="">
-
-
             </section>
 
             <section class="quote-section">
@@ -56,11 +54,13 @@
             </section>
 
             <section class="projects">
-                <h2 class="projects__header">
-                    projects
-                </h2>
-
-                <p class="projects__p">View all</p>
+                <div class="projects__header">
+                    <h2 class="projects__h2">
+                        <span class="purple">#</span>projects
+                    </h2>
+                    <hr>
+                    <p class="projects__p">View all ~~></p>
+                </div>
 
                 <ul class="projects__cards">
                     <li class="cards__first-list">
@@ -71,10 +71,12 @@
                             <li>Python</li>
                             <li>Flask</li>
                         </ul>
-                        <h3 class="first-list__h3">ChertNodes</h3>
-                        <p class="first-list__p">Minecraft servers hosting</p>
-                        <button class="first-list__button-1">Live</button>
-                        <button class="first-list__button-2">Cached</button>
+                        <div class="cards_text_1">
+                            <h3 class="cards_text_1__h3">ChertNodes</h3>
+                            <p class="cards_text_1__p">Minecraft servers hosting</p>
+                            <button class="cards_text_1__button-1">Live <~></button>
+                            <button class="cards_text_1__button-2">Cached >=</button>
+                        </div>
                     </li>
 
                     <li class="cards__second-list">
@@ -89,9 +91,11 @@
                             <li>Python</li>
                             <li>Flask</li>
                         </ul>
-                        <h3 class="second-list__h3">ProtectX</h3>
-                        <p class="second-list__p">Discord anti-crash bot</p>
-                        <button class="second-list__button">Live</button>
+                        <div class="cards_text_2">
+                            <h3 class="cards_text_2__h3">ProtectX</h3>
+                            <p class="cards_text_2__p">Discord anti-crash bot</p>
+                            <button class="cards_text_2__button">Live <~></button>
+                        </div>
                     </li>
 
                     <li class="cards__third-list">
@@ -101,91 +105,105 @@
                             <li>Express</li>
                             <li>Node.js</li>
                         </ul>
-                        <h3 class="third-list__h3">Kahoot Answers Viewer</h3>
-                        <p class="third-list__p">Get answers to your kahoot quiz</p>
-                        <button class="third-list__button">Live</button>
+                        <div class="cards_text_3">
+                            <h3 class="cards_text_3__h3">Kahoot Answers Viewer</h3>
+                            <p class="cards_text_3__p">Get answers to your kahoot quiz</p>
+                            <button class="cards_text_3__button">Live <~></button>
+                        </div>
                     </li>
                 </ul>
             </section>
 
             <section class="skills-section">
-                <h2 class="skills-section__h2">skills</h2>
+                <div class="skills-section__header">
+                    <h2 class="skills-section__h2"> <span class="purple">#</span>skills</h2>
+                <hr class="skills-section__hr">
+                </div>
+                
+                <div class="skills-section-content">
+                    <img class="skills-section__img" src="img/Group 36.png" alt="">
 
-                <img class="skills-section__img" src="img/Group 36.png" alt="">
+                    <ul class="skills-section__ul-skills">
+                        <li class="ul-skills__first-list-skills">
+                            <p class="first-list-skills__p">Languages</p>
+                            <ul class="first-list-skills__ul-2">
+                                <li>TypeScript</li>
+                                <li>Lua</li>
+                                <li>Python</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </li>
 
-                <ul class="skills-section__ul-skills">
-                    <li class="ul-skills__first-list-skills">
-                        <p class="first-list-skills__p">Languages</p>
-                        <ul class="first-list-skills__ul-2">
-                            <li>TypeScript</li>
-                            <li>Lua</li>
-                            <li>Python</li>
-                            <li>JavaScript</li>
-                        </ul>
-                    </li>
+                        <li class="ul-skills__second-list-skills">
+                            <p class="second-list-skills__p">Databases</p>
+                            <ul class="second-list-skills__ul-2">
+                                <li>SQLite</li>
+                                <li>PostgreSQL</li>
+                                <li>Mongo</li>
+                            </ul>
+                        </li>
 
-                    <li class="ul-skills__second-list">
-                        <p class="second-list-skills__p">Databases</p>
-                        <ul class="second-list-skills__ul-2">
-                            <li>SQLite</li>
-                            <li>PostgreSQL</li>
-                            <li>Mongo</li>
-                        </ul>
-                    </li>
+                        <li class="ul-skills__third-list-skills">
+                            <p class="third-list-skills__p">Tools</p>
+                            <ul class="third-list-skills__ul-2">
+                                <li>VSCode</li>
+                                <li>Neovim</li>
+                                <li>Linux</li>
+                                <li>Figma</li>
+                                <li>XFCE</li>
+                                <li>Arch</li>
+                                <li>Git</li>
+                                <li>Font</li>
+                                <li>Awesome</li>
+                            </ul>
+                        </li>
 
-                    <li class="ul-skills__third-list">
-                        <p class="third-list-skills__p">Tools</p>
-                        <ul class="third-list-skills__ul-2">
-                            <li>VSCode</li>
-                            <li>Neovim</li>
-                            <li>Linux</li>
-                            <li>Figma</li>
-                            <li>XFCE</li>
-                            <li>Arch</li>
-                            <li>Git</li>
-                            <li>Font</li>
-                            <li>Awesome</li>
-                        </ul>
-                    </li>
+                        <li class="ul-skills__fourth-list-skills">
+                            <p class="fourth-list-skills__p">Others</p>
+                            <ul class="fourth-list-skills__ul-2">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>EJS</li>
+                                <li>SCSS</li>
+                                <li>REST</li>
+                                <li>Jinja</li>
+                            </ul>
+                        </li>
 
-                    <li class="ul-skills__fourth-list">
-                        <p class="fourth-list-skills__p">Others</p>
-                        <ul class="fourth-list-skills__ul-2">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>EJS</li>
-                            <li>SCSS</li>
-                            <li>REST</li>
-                            <li>Jinja</li>
-                        </ul>
-                    </li>
-
-                    <li class="ul-skills__fifth-list">
-                        <p class="fifth-list-skills__p">Frameworks</p>
-                        <ul class="fifth-list-skills__ul-2">
-                            <li>React</li>
-                            <li>Vue</li>
-                            <li>Disnake</li>
-                            <li>Discord.js</li>
-                            <li>Flask</li>
-                            <li>Express.js</li>
-                        </ul>
-                    </li>
-                </ul>
+                        <li class="ul-skills__fifth-list-skills">
+                            <p class="fifth-list-skills__p">Frameworks</p>
+                            <ul class="fifth-list-skills__ul-2">
+                                <li>React</li>
+                                <li>Vue</li>
+                                <li>Disnake</li>
+                                <li>Discord.js</li>
+                                <li>Flask</li>
+                                <li>Express.js</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
             </section>
 
             <section class="about-me">
-                <h2 class="about-me__h2">about-me</h2>
+                <div class="about-me__header">
+                    <h2 class="about-me__h2"><span class="purple">#</span>about-me</h2>
+                    <hr class="about-me__hr">
+                </div>
+                
+                <div class="about-me__content">
+                    <p class="about-me__p">Hello, i’m Elias!
 
-                <p class="about-me__p">Hello, i’m Elias!
-
-                    I’m a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences. 
-                    
-                    Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.</p>
-
-                <button class="about-me__button">Read more</button>
-
-                <img class="about-me__img" src="img/Group 50.png" alt="">
+                        I’m a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences. 
+                        
+                        Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.</p>
+    
+                    <button class="about-me__button">Read more</button>
+    
+                    <img class="about-me__img" src="img/Group 50.png" alt="">
+                </div>
+                
             </section>
 
             <section class="contacts">

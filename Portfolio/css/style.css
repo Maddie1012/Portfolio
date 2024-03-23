@@ -1,62 +1,390 @@
-.body_content {
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+* {
+  font-family: "Fira Code";
+  list-style-type: none;
+}
+
+.body-content {
   background-color: #282C33;
+  padding: 0;
+  margin: 0;
 }
 
 .all {
   max-width: 1024px;
   min-width: 320px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   height: 61px;
+  margin-bottom: 62px;
 }
-
-.header p {
-  margin-bottom: -1px;
-}
-
-.header__p {
+.header .header__p {
   color: #FFFFFF;
-  margin: 0 0 4px 0;
+  margin: 0 0 0 0;
   position: relative;
   bottom: -30px;
 }
-
-.header__p__image {
+.header .header__p__image {
   margin: 0 5px 0 0;
 }
-
-.header__nav {
+.header .header__nav {
   display: flex;
   justify-content: end;
 }
-
-.header__nav__links {
+.header .header__nav__links {
   display: flex;
+  list-style-image: url(../img/aa.svg);
+  margin: 9px;
 }
-
-.header__nav__links li {
-  color: #FFFFFF;
-  padding-right: 10px;
+.header .header__nav__links a {
+  color: #ABB2BF;
+  text-decoration: none;
 }
-
-.header__nav__links li:not(:first-child) {
+.header .header__nav__links li {
+  padding-right: 20px;
+}
+.header .header__button {
+  border: 0 solid #000;
+  background-color: #282C33;
+  font-size: 16px;
   color: #ABB2BF;
 }
 
-.first_section {
+.first-section {
   display: flex;
+  margin-bottom: 112px;
 }
-
-.first_section__main__header {
+.first-section .first-section__text {
+  margin-right: 18px;
+  word-spacing: 3px;
+}
+.first-section .text__header {
   color: #FFFFFF;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 32px;
 }
-.first_section__main__header .purple {
+.first-section .text__header .purple {
   color: #C778DD;
 }
+.first-section .first-section__p {
+  font-size: 16px;
+  color: #ABB2BF;
+  margin-bottom: 24px;
+}
+.first-section .first-section__button {
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 1px solid #C778DD;
+  border-radius: 0px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 16px;
+}
+.first-section .first-section__button:hover {
+  background-color: rgba(199, 120, 221, 0.2);
+  transition-duration: 300ms;
+}
+.first-section .first-section__image {
+  display: flex;
+  width: 469px;
+  height: 386px;
+}
 
-.first_section__main__p {
+.quote-section .quote-section__bquote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quote-section .quote-section__bquote .bquote__p {
+  color: #FFFFFF;
+}
+.quote-section .quote-section__bquote .bquote__cite {
+  color: #FFFFFF;
+}
+
+.projects .projects__header {
+  display: flex;
+  align-items: center;
+}
+.projects .projects__header .projects__h2 {
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: 500;
+  margin-right: 16px;
+}
+.projects .projects__header .projects__h2 .purple {
+  color: #C778DD;
+}
+.projects .projects__header hr {
+  width: 511px;
+  height: 1px;
+  margin-left: 0;
+}
+.projects .projects__header .projects__p {
+  color: #FFFFFF;
+}
+.projects .projects__cards {
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+}
+.projects .projects__cards .cards__first-list {
+  margin-right: 16px;
+  border: 1px solid #ABB2BF;
+}
+.projects .projects__cards .cards__first-list .first-list__ul {
+  color: #ABB2BF;
+  padding: 0 8px;
+  font-size: 16px;
+  border-bottom: 1px solid #ABB2BF;
+  padding-bottom: 8px;
+}
+.projects .projects__cards .cards__first-list .first-list__ul li {
+  display: inline;
+}
+.projects .projects__cards .cards__first-list .cards_text_1 {
+  padding: 16px;
+}
+.projects .projects__cards .cards__first-list .cards_text_1 .cards_text_1__h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+.projects .projects__cards .cards__first-list .cards_text_1 .cards_text_1__p {
+  color: #ABB2BF;
+  margin-bottom: 16px;
+}
+.projects .projects__cards .cards__first-list .cards_text_1 .cards_text_1__button-1 {
+  border: 1px solid #C778DD;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFFFFF;
+  padding: 8px 16px;
+}
+.projects .projects__cards .cards__first-list .cards_text_1 .cards_text_1__button-2 {
+  border: 1px solid #ABB2BF;
+  background-color: transparent;
+  color: #ABB2BF;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFFFFF;
+  padding: 8px 16px;
+}
+.projects .projects__cards .cards__second-list {
+  margin-right: 16px;
+  border: 1px solid #ABB2BF;
+}
+.projects .projects__cards .cards__second-list .second-list__ul {
+  color: #ABB2BF;
+  padding: 0 8px;
+  font-size: 16px;
+  border-bottom: 1px solid #ABB2BF;
+  padding-bottom: 8px;
+}
+.projects .projects__cards .cards__second-list .second-list__ul li {
+  display: inline;
+}
+.projects .projects__cards .cards__second-list .cards_text_2 {
+  padding: 16px;
+}
+.projects .projects__cards .cards__second-list .cards_text_2 .cards_text_2__h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+.projects .projects__cards .cards__second-list .cards_text_2 .cards_text_2__p {
+  color: #ABB2BF;
+  margin-bottom: 16px;
+}
+.projects .projects__cards .cards__second-list .cards_text_2 .cards_text_2__button {
+  border: 1px solid #C778DD;
+  background-color: transparent;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFFFFF;
+  padding: 8px 16px;
+}
+.projects .projects__cards .cards__third-list {
+  border: 1px solid #ABB2BF;
+}
+.projects .projects__cards .cards__third-list .third-list__ul {
+  color: #ABB2BF;
+  padding: 0 8px;
+  font-size: 16px;
+  border-bottom: 1px solid #ABB2BF;
+  padding-bottom: 8px;
+}
+.projects .projects__cards .cards__third-list .third-list__ul li {
+  display: inline;
+}
+.projects .projects__cards .cards__third-list .cards_text_3 {
+  padding: 16px;
+}
+.projects .projects__cards .cards__third-list .cards_text_3 .cards_text_3__h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+.projects .projects__cards .cards__third-list .cards_text_3 .cards_text_3__p {
+  color: #ABB2BF;
+  margin-bottom: 16px;
+}
+.projects .projects__cards .cards__third-list .cards_text_3 .cards_text_3__button {
+  border: 1px solid #C778DD;
+  background-color: transparent;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFFFFF;
+  padding: 8px 16px;
+}
+
+.skills-section {
+  display: flex;
+  flex-direction: column;
+}
+.skills-section .skills-section__header {
+  display: flex;
+  align-items: center;
+}
+.skills-section .skills-section__header .skills-section__h2 {
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: 500;
+  margin-right: 16px;
+}
+.skills-section .skills-section__header .skills-section__h2 .purple {
+  color: #C778DD;
+}
+.skills-section .skills-section__header .skills-section__hr {
+  margin: 0;
+  width: 511px;
+}
+.skills-section .skills-section-content {
+  display: flex;
+}
+.skills-section .skills-section-content .skills-section__img {
+  width: 349px;
+  height: 282px;
+  margin-right: 59px;
+}
+.skills-section .skills-section-content .skills-section__ul-skills {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+.skills-section .skills-section-content .skills-section__ul-skills .ul-skills__first-list-skills {
+  padding: 8px 0;
+  border: 1px solid #ABB2BF;
+  margin-right: 16px;
+}
+.skills-section .skills-section-content .skills-section__ul-skills .ul-skills__first-list-skills .first-list-skills__p {
+  color: #FFFFFF;
+  font-size: 16px;
+  margin: 0;
+  padding: 0 8px 8px 8px;
+  border-bottom: 1px solid #ABB2BF;
+}
+.skills-section .skills-section-content .skills-section__ul-skills .ul-skills__first-list-skills .first-list-skills__ul-2 {
+  color: #ABB2BF;
+  padding: 8px 8px 8px 8px;
+}
+.skills-section .skills-section-content .skills-section__ul-skills .ul-skills__second-list-skills {
+  padding: 8px 0;
+  border: 1px solid #ABB2BF;
+  margin-right: 16px;
+}
+.skills-section .skills-section-content .skills-section__ul-skills .ul-skills__second-list-skills .second-list-skills__p {
+  color: #FFFFFF;
+  font-size: 16px;
+  margin: 0;
+  padding: 0 8px;
+}
+.skills-section .skills-section-content .skills-section__ul-skills .ul-skills__second-list-skills .second-list-skills__ul-2 {
+  color: #ABB2BF;
+  padding: 0 8px;
+}
+.skills-section .skills-section-content .skills-section__ul-skills .ul-skills__third-list-skills {
+  padding: 8px 0;
+  border: 1px solid #ABB2BF;
+  margin-right: 16px;
+}
+.skills-section .skills-section-content .skills-section__ul-skills .ul-skills__third-list-skills .third-list-skills__p {
+  color: #FFFFFF;
+  font-size: 16px;
+  margin: 0;
+  padding: 0 8px;
+}
+.skills-section .skills-section-content .skills-section__ul-skills .ul-skills__third-list-skills .third-list-skills__ul-2 {
+  color: #ABB2BF;
+  padding: 0 8px;
+}
+.skills-section .skills-section-content .skills-section__ul-skills .ul-skills__fourth-list-skills {
+  padding: 8px 0;
+  border: 1px solid #ABB2BF;
+  margin-right: 16px;
+}
+.skills-section .skills-section-content .skills-section__ul-skills .ul-skills__fourth-list-skills .fourth-list-skills__p {
+  color: #FFFFFF;
+  font-size: 16px;
+  margin: 0;
+  padding: 0 8px;
+}
+.skills-section .skills-section-content .skills-section__ul-skills .ul-skills__fourth-list-skills .fourth-list-skills__ul-2 {
+  color: #ABB2BF;
+  padding: 0 8px;
+}
+.skills-section .skills-section-content .skills-section__ul-skills .ul-skills__fifth-list-skills {
+  padding: 8px 0;
+  border: 1px solid #ABB2BF;
+}
+.skills-section .skills-section-content .skills-section__ul-skills .ul-skills__fifth-list-skills .fifth-list-skills__p {
+  color: #FFFFFF;
+  font-size: 16px;
+  margin: 0;
+  padding: 0 8px;
+}
+.skills-section .skills-section-content .skills-section__ul-skills .ul-skills__fifth-list-skills .fifth-list-skills__ul-2 {
+  color: #ABB2BF;
+  padding: 0 8px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+}
+.about-me .about-me__header {
+  display: flex;
+  align-items: center;
+}
+.about-me .about-me__header .about-me__h2 {
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: 500;
+  margin-right: 16px;
+}
+.about-me .about-me__header .about-me__h2 .purple {
+  color: #C778DD;
+}
+.about-me .about-me__header .about-me__hr {
+  margin: 0;
+  width: 511px;
+}
+.about-me .about-me__content .about-me__p {
   color: #ABB2BF;
 }/*# sourceMappingURL=style.css.map */
