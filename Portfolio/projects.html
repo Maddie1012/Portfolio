@@ -6,7 +6,252 @@
     <link rel="stylesheet" href="css/projects.css">
     <title>Projects</title>
 </head>
-<body>
+<body class="body-content">
+    <div class="home">
+        <hr class="home__hr">
+        <ul class="home__ul">
+            <li>
+                <a href="#">
+                    <img src="img/Github.svg" alt="Github">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/Dribble.svg" alt="Dribble">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/Figma.svg" alt="Figma">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+<!-- все кроме home и footer -->
+    <div class="all">
+        <div class="wrapper">
+            <header class="header">
+                    <a class="header__a" href="#">
+                        <img class="header__p__image" src="img/Logo.png" alt="иконка">Ellias
+                    </a>
+
+                    <nav class="header__nav">
+                        <ul class="header__nav__links">
+                            <li>
+                                <a href="index.html"><span class="purple">#</span><span class="white__always">home</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="purple">#</span><span class="white">works</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="purple">#</span><span class="white">about-me</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="purple">#</span><span class="white">contacts</span></a>
+                            </li>
+                        </ul>
+                    <select class="header__option" name="" id="">
+                        <option value="EN">EN</option>
+                        <option value="RU">RU</option>
+                    </select>
+                    </nav>
+            </header>
+        </div>
+
+
+
+        <div class="wrapper">
+            <section class="projects">
+                <h2 class="projects__header-2"><span class="purple">/</span>projects</h2>
+                <p class="projects__p">List of my projects</p>
+            </section>
+        </div>
+
+
+
+        <div class="wrapper">
+            <section class="complete-apps">
+                <h2 class="complete-apps__header-2"><span class="purple">#</span>complete-apps</h2>
+                <div class="complete-apps__cards">
+                    <ul class="projects__cards-1">
+                        <li class="cards__first-list">
+                            <img class="first-list__img" src="img/Rectangle_22.jpg" alt="Проект_1">
+                            <ul class="first-list__ul">
+                                <li>HTML SCSS Python Flask</li>
+                            </ul>
     
+                            <div class="cards_text_1">
+                                <h3 class="cards_text_1__h3">ChertNodes</h3>
+                                <p class="cards_text_1__p">Minecraft servers hosting</p>
+                                <button class="cards_text_1__button-1">Live <~></button>
+                                <button class="cards_text_1__button-2">Cached >=</button>
+                            </div>
+                        </li>
+    
+                        <li class="cards__third-list">
+                            <img class="third-list__img" src="img/Rectangle 22 (1).png" alt="Проект_3">
+                            <ul class="third-list__ul">
+                                <li>CSS Express Node.js</li>
+                            </ul>
+                            <div class="cards_text_3">
+                                <h3 class="cards_text_3__h3">Kahoot Answers Viewer</h3>
+                                <p class="cards_text_3__p">Get answers to your kahoot quiz</p>
+                                <button class="cards_text_3__button">Live <~></button>
+                            </div>
+                        </li>
+    
+                        <li class="cards__second-list">
+                            <img class="second-list__img" src="img/Rectangle 22.png" alt="Проект_2">
+                            <ul class="second-list__ul">
+                                <li>React Express Discord.js Node.js</li> 
+                            </ul>
+                            <div class="cards_text_2">
+                                <h3 class="cards_text_2__h3">ProtectX</h3>
+                                <p class="cards_text_2__p">Discord anti-crash bot</p>
+                                <button class="cards_text_2__button">Cached >=</button>
+                            </div>
+                        </li>
+                    </ul>
+    
+    
+                    <ul class="projects__cards-2">
+                        <li class="two__cards__first-list">
+                            <img class="two__first-list__img" src="img/Rectangle_22.jpg" alt="Проект_1">
+                            <ul class="two__first-list__ul">
+                                <li>HTML CSS JS</li>
+                            </ul>
+    
+                            <div class="two__cards_text_1">
+                                <h3 class="two__cards_text_1__h3">Kotik Bot</h3>
+                                <p class="two__cards_text_1__p">Multi-functional discord bot</p>
+                                <button class="two__cards_text_1__button">Live <~></button>
+                            </div>
+                        </li>
+    
+                        <li class="two__cards__second-list">
+                            <img class="two__second-list__img" src="img/Rectangle 22.png" alt="Проект_2">
+                            <ul class="two__second-list__ul">
+                                <li>Vue TS Less</li> 
+                            </ul>
+                            <div class="two__cards_text_2">
+                                <h3 class="two__cards_text_2__h3">Portfolio</h3>
+                                <p class="two__cards_text_2__p">You’re using it rn</p>
+                                <button class="two__cards_text_2__button">Github <~></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+
+
+        <div class="wrapper">
+            <section class="small-projects">
+                <h1 class="small-projects__header"><span class="purple">#</span>small-projects</h1>
+
+                <div class="small-projects__cards">
+                    <ul class="cards__first-line">
+                        <li class="cards__first-line__first-list">
+                            <ul class="first-list__stack">
+                                <li>Discord.js TS JS</li>
+                            </ul>
+                            <div class="first-list__text">
+                                <h3 class="first-list__header">Bot boilerplate</h3>
+                                <p class="first-list__p">Start creating scalable discord.js bot with typescript in seconds</p>
+                                <button class="first-list__button">Github <~></button>
+                            </div>
+                        </li>
+
+                        <li class="cards__first-line__second-list">
+                            <ul class="second-list__stack">
+                                <li>VUE CSS JS</li>
+                            </ul>
+                            <div class="second-list__text">
+                                <h3 class="second-list__header">My blog</h3>
+                                <p class="second-list__p">Front-end of my future blog website written in vue</p>
+                                <button class="second-list__button">Github <~></button>
+                            </div>
+                        </li>
+
+                        <li class="cards__first-line__third-list">
+                            <ul class="third-list__stack">
+                                <li>Figma</li>
+                            </ul>
+                            <div class="third-list__text">
+                                <h3 class="third-list__header">Chess pro</h3>
+                                <p class="third-list__p">Figma landing page about service for viewing chess tournaments</p>
+                                <button class="third-list__button">Figma <~></button>
+                            </div>
+                        </li>
+                    </ul>
+
+
+                    <ul class="cards__second-line">
+                        <li class="cards__second-line__first-list">
+                            <ul class="first-list__stack">
+                                <li>Figma</li>
+                            </ul>
+                            <div class="first-list__text">
+                                <h3 class="first-list__header">Crash protect website</h3>
+                                <p class="first-list__p">Figma template for website about anti-raid, anti-crash discord bot</p>
+                                <button class="first-list__button">Figma <~></button>
+                            </div>
+                        </li>
+
+                        <li class="cards__second-line__second-list">
+                            <ul class="second-list__stack">
+                                <li>HTML CSS</li>
+                            </ul>
+                            <div class="second-list__text">
+                                <h3 class="second-list__header">CSS expirements</h3>
+                                <p class="second-list__p">Collection of my different little projects in css</p>
+                                <button class="second-list__button">Live <~></button>
+                            </div>
+                        </li>
+
+                        <li class="cards__second-line__third-list">
+                            <ul class="third-list__stack">
+                                <li>Lua NeoVim</li>
+                            </ul>
+                            <div class="third-list__text">
+                                <h3 class="third-list__header">Web Dev nvim config</h3>
+                                <p class="third-list__p">Config for neovim perfect for web developer</p>
+                                <button class="third-list__button">Github <~></button>
+                            </div>
+                        </li>
+                    </ul>
+
+
+                    <ul class="cards__third-line">
+                        <li class="cards__third-line__first-list">
+                            <ul class="first-list__stack">
+                                <li>Python Quart HTML</li>
+                            </ul>
+                            <div class="first-list__text">
+                                <h3 class="first-list__header">Ooku</h3>
+                                <p class="first-list__p">Simple link shortener with auth</p>
+                                <button class="first-list__button">Live <~></button>
+                            </div>
+                        </li>
+
+                        <li class="cards__third-line__second-list">
+                            <ul class="second-list__stack">
+                                <li>Figma</li>
+                            </ul>
+                            <div class="second-list__text">
+                                <h3 class="second-list__header">School website</h3>
+                                <p class="second-list__p">Figma template website for my school</p>
+                                <button class="second-list__button">Figma <~></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+    </div>
 </body>
 </html>

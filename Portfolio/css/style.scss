@@ -26,12 +26,23 @@ ul, li, p {
 }
 
 
+.white:hover {
+    color: $white;
+}
+
+
+.white__always {
+    color: $white;
+}
+
+
 .body-content {
     background-color: #282C33;
     padding: 0;
     margin: 0;
     position: relative;
 }
+
 
 .home {
     position: fixed;
@@ -57,7 +68,6 @@ ul, li, p {
     margin: 0 auto;
     width: 1024px;
 }
-
 
 
 .header {
@@ -92,14 +102,10 @@ ul, li, p {
             color: $gray;
             text-decoration: none;
         }
-    
+        
         li {
             padding-right: 32px;
         }
-    }
-
-    .header__first-a {
-        color: $white;
     }
 
     .header__option {
@@ -116,9 +122,7 @@ ul, li, p {
     align-items: flex-end;
 }
 
-.content {
 
-}
 
 .main-title {
     display: flex;
@@ -126,6 +130,8 @@ ul, li, p {
     margin-top: 132px;
     margin-bottom: 112px;
     .main-title__text {
+        position: relative;
+        top: -39px;
         margin-right: 18px;
         .main-title__header {
             color: $white;
@@ -137,7 +143,7 @@ ul, li, p {
         .main-title__p {
             font-size: 16px;
             color: $gray;
-            margin-bottom: 24px;
+            margin-bottom: 35px;
             width: 463px;
         }
     
@@ -272,7 +278,8 @@ ul, li, p {
             border: none;
         }
 
-        .projects__p {
+        .projects__a {
+            text-decoration: none;
             color: $white;
         }
     }
@@ -658,7 +665,7 @@ ul, li, p {
     .wrapper__aside {
         display: flex;
         justify-content: space-between;
-        height: 141px;
+        // height: 141px;
         .contacts__p {
             color: $gray;
             font-size: 16px;
@@ -676,20 +683,27 @@ ul, li, p {
             .list__a_first-link {
                 text-decoration: none;
                 color: $gray;
-                // display: flex;
-                // align-items: center;
+                display: flex;
+                align-items: center;
+                &:hover {
+                    color: $white;
+                }
                 .list__img_1 {
-
+                    margin-right: 5px;
                 }
             }
 
             .list__a_second-link {
                 text-decoration: none;
+                margin-top: -8px;
                 color: $gray;
-                // display: flex;
-                // align-items: center;
+                display: flex;
+                align-items: center;
+                &:hover {
+                    color: $white;
+                }
                 .list__img_2 {
-
+                    margin-right: 5px;
                 }
             }
         }

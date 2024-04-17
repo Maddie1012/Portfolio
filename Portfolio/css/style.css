@@ -20,6 +20,14 @@ ul, li, p {
   color: #C778DD;
 }
 
+.white:hover {
+  color: #FFFFFF;
+}
+
+.white__always {
+  color: #FFFFFF;
+}
+
 .body-content {
   background-color: #282C33;
   padding: 0;
@@ -85,9 +93,6 @@ ul, li, p {
 .header .header__nav__links li {
   padding-right: 32px;
 }
-.header .header__first-a {
-  color: #FFFFFF;
-}
 .header .header__option {
   border: 0 solid #000;
   background-color: #282C33;
@@ -103,6 +108,8 @@ ul, li, p {
   margin-bottom: 112px;
 }
 .main-title .main-title__text {
+  position: relative;
+  top: -39px;
   margin-right: 18px;
 }
 .main-title .main-title__text .main-title__header {
@@ -114,7 +121,7 @@ ul, li, p {
 .main-title .main-title__text .main-title__p {
   font-size: 16px;
   color: #ABB2BF;
-  margin-bottom: 24px;
+  margin-bottom: 35px;
   width: 463px;
 }
 .main-title .main-title__text .main-title__a {
@@ -236,7 +243,8 @@ ul, li, p {
   background: #C778DD;
   border: none;
 }
-.projects .projects__header .projects__p {
+.projects .projects__header .projects__a {
+  text-decoration: none;
   color: #FFFFFF;
 }
 .projects .projects__cards {
@@ -587,7 +595,6 @@ ul, li, p {
 .contacts .wrapper__aside {
   display: flex;
   justify-content: space-between;
-  height: 141px;
 }
 .contacts .wrapper__aside .contacts__p {
   color: #ABB2BF;
@@ -606,11 +613,29 @@ ul, li, p {
 .contacts .wrapper__aside .contacts__aside .list__a_first-link {
   text-decoration: none;
   color: #ABB2BF;
+  display: flex;
+  align-items: center;
+}
+.contacts .wrapper__aside .contacts__aside .list__a_first-link:hover {
+  color: #FFFFFF;
+}
+.contacts .wrapper__aside .contacts__aside .list__a_first-link .list__img_1 {
+  margin-right: 5px;
 }
 .contacts .wrapper__aside .contacts__aside .list__a_second-link {
   text-decoration: none;
+  margin-top: -8px;
   color: #ABB2BF;
+  display: flex;
+  align-items: center;
 }
+.contacts .wrapper__aside .contacts__aside .list__a_second-link:hover {
+  color: #FFFFFF;
+}
+.contacts .wrapper__aside .contacts__aside .list__a_second-link .list__img_2 {
+  margin-right: 5px;
+}
+
 .wrapper__footer {
   border-top: 1px solid #FFFFFF;
 }
