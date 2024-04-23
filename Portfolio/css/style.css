@@ -28,6 +28,24 @@ ul, li, p {
   color: #FFFFFF;
 }
 
+.icon-Discord::before {
+  font-size: 32px;
+  margin-right: 5px;
+}
+
+.icon-Discord:hover::before {
+  color: #FFFFFF;
+}
+
+.icon-Email::before {
+  font-size: 32px;
+  margin-right: 5px;
+}
+
+.icon-Email:hover::before {
+  color: #FFFFFF;
+}
+
 .body-content {
   background-color: #282C33;
   padding: 0;
@@ -76,7 +94,9 @@ ul, li, p {
   text-decoration: none;
 }
 .header .header__p__image {
-  margin: 0 5px 0 0;
+  margin: 0 8px 0 0;
+  position: relative;
+  top: 3px;
 }
 .header .header__nav {
   display: flex;
@@ -419,17 +439,24 @@ ul, li, p {
   width: 349px;
   height: 282px;
   margin-right: 59px;
+  margin-left: 32px;
 }
 .skills-section .skills-section-content .skills-section__ul-skills {
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 178px 178px 196px;
+  grid-template-rows: auto auto;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  row-gap: 16px;
   margin: 0;
   padding: 0;
+  width: 584px;
 }
 .skills-section .skills-section-content .skills-section__ul-skills .ul-skills__first-list-skills {
   padding: 8px 0;
   border: 1px solid #ABB2BF;
   margin-right: 16px;
+  width: 178px;
 }
 .skills-section .skills-section-content .skills-section__ul-skills .ul-skills__first-list-skills .first-list-skills__p {
   color: #FFFFFF;
@@ -440,66 +467,81 @@ ul, li, p {
 }
 .skills-section .skills-section-content .skills-section__ul-skills .ul-skills__first-list-skills .first-list-skills__ul-2 {
   color: #ABB2BF;
-  padding: 8px 8px 8px 8px;
+  padding: 8px 8px 0 8px;
+  font-size: 16px;
 }
 .skills-section .skills-section-content .skills-section__ul-skills .ul-skills__second-list-skills {
   padding: 8px 0;
   border: 1px solid #ABB2BF;
   margin-right: 16px;
+  width: 178px;
 }
 .skills-section .skills-section-content .skills-section__ul-skills .ul-skills__second-list-skills .second-list-skills__p {
   color: #FFFFFF;
   font-size: 16px;
   margin: 0;
   padding: 0 8px;
+  padding: 0 8px 8px 8px;
+  border-bottom: 1px solid #ABB2BF;
 }
 .skills-section .skills-section-content .skills-section__ul-skills .ul-skills__second-list-skills .second-list-skills__ul-2 {
   color: #ABB2BF;
-  padding: 0 8px;
+  padding: 8px 8px 0 8px;
+  font-size: 16px;
 }
 .skills-section .skills-section-content .skills-section__ul-skills .ul-skills__third-list-skills {
   padding: 8px 0;
   border: 1px solid #ABB2BF;
   margin-right: 16px;
+  width: 196px;
 }
 .skills-section .skills-section-content .skills-section__ul-skills .ul-skills__third-list-skills .third-list-skills__p {
   color: #FFFFFF;
   font-size: 16px;
   margin: 0;
-  padding: 0 8px;
+  padding: 0 8px 8px 8px;
+  border-bottom: 1px solid #ABB2BF;
 }
 .skills-section .skills-section-content .skills-section__ul-skills .ul-skills__third-list-skills .third-list-skills__ul-2 {
   color: #ABB2BF;
-  padding: 0 8px;
+  padding: 8px 8px 0 8px;
+  font-size: 16px;
+  font-weight: 400;
 }
 .skills-section .skills-section-content .skills-section__ul-skills .ul-skills__fourth-list-skills {
   padding: 8px 0;
   border: 1px solid #ABB2BF;
   margin-right: 16px;
+  width: 178px;
 }
 .skills-section .skills-section-content .skills-section__ul-skills .ul-skills__fourth-list-skills .fourth-list-skills__p {
   color: #FFFFFF;
   font-size: 16px;
   margin: 0;
   padding: 0 8px;
+  padding: 0 8px 8px 8px;
+  border-bottom: 1px solid #ABB2BF;
 }
 .skills-section .skills-section-content .skills-section__ul-skills .ul-skills__fourth-list-skills .fourth-list-skills__ul-2 {
   color: #ABB2BF;
-  padding: 0 8px;
+  padding: 8px 8px 0 8px;
 }
 .skills-section .skills-section-content .skills-section__ul-skills .ul-skills__fifth-list-skills {
   padding: 8px 0;
   border: 1px solid #ABB2BF;
+  width: 178px;
 }
 .skills-section .skills-section-content .skills-section__ul-skills .ul-skills__fifth-list-skills .fifth-list-skills__p {
   color: #FFFFFF;
   font-size: 16px;
   margin: 0;
   padding: 0 8px;
+  padding: 0 8px 8px 8px;
+  border-bottom: 1px solid #ABB2BF;
 }
 .skills-section .skills-section-content .skills-section__ul-skills .ul-skills__fifth-list-skills .fifth-list-skills__ul-2 {
   color: #ABB2BF;
-  padding: 0 8px;
+  padding: 8px 8px 0 8px;
 }
 
 .wrapper__about-me {
@@ -619,9 +661,6 @@ ul, li, p {
 .contacts .wrapper__aside .contacts__aside .list__a_first-link:hover {
   color: #FFFFFF;
 }
-.contacts .wrapper__aside .contacts__aside .list__a_first-link .list__img_1 {
-  margin-right: 5px;
-}
 .contacts .wrapper__aside .contacts__aside .list__a_second-link {
   text-decoration: none;
   margin-top: -8px;
@@ -647,14 +686,22 @@ ul, li, p {
   justify-content: space-between;
   margin-bottom: 48px;
 }
-.wrapper__footer .footer .content__footer .footer__email .footer__p_first {
-  display: inline;
-  margin-right: 24px;
+.wrapper__footer .footer .content__footer .footer__email .footer__email__img {
+  position: relative;
+  top: 3px;
+  margin-right: 9px;
   color: #FFFFFF;
 }
-.wrapper__footer .footer .content__footer .footer__email .footer__p_second {
+.wrapper__footer .footer .content__footer .footer__email .footer__p_first {
+  display: inline;
+  margin-right: 15px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.wrapper__footer .footer .content__footer .footer__email .footer__a_second {
   display: inline;
   color: #ABB2BF;
+  text-decoration: none;
 }
 .wrapper__footer .footer .content__footer .footer__email .footer__p_third {
   margin-top: 16px;

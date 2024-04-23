@@ -36,13 +36,31 @@ ul, li, p {
 }
 
 
+
+.icon-Discord::before {
+    font-size: 32px;
+    margin-right: 5px;
+}
+.icon-Discord:hover::before {
+    color: $white;
+}
+
+.icon-Email::before {
+    font-size: 32px;
+    margin-right: 5px;
+}
+.icon-Email:hover::before {
+    color: $white;
+}
+
+
+
 .body-content {
     background-color: #282C33;
     padding: 0;
     margin: 0;
     position: relative;
 }
-
 
 .home {
     position: fixed;
@@ -87,7 +105,9 @@ ul, li, p {
     }
 
     .header__p__image {
-        margin: 0 5px 0 0;
+        margin: 0 8px 0 0;
+        position: relative;
+        top: 3px;
     }
 
     .header__nav{
@@ -475,17 +495,23 @@ ul, li, p {
             width: 349px;
             height: 282px;
             margin-right: 59px;
+            margin-left: 32px;
         }
     
         .skills-section__ul-skills {
-            display: flex;
-            align-items: flex-start;
+            display: grid;
+            grid-template-columns: 178px 178px 196px;
+            grid-template-rows: auto auto;
+            column-gap: 16px;
+            row-gap: 16px;
             margin: 0;
             padding: 0;
+            width: 584px;
             .ul-skills__first-list-skills {
                 padding: 8px 0;
                 border: 1px solid $gray;
                 margin-right: 16px;
+                width: 178px;
                 .first-list-skills__p {
                     color: $white;
                     font-size: 16px;
@@ -495,7 +521,8 @@ ul, li, p {
                 }
                 .first-list-skills__ul-2 {
                     color: $gray;
-                    padding: 8px 8px 8px 8px;
+                    padding: 8px 8px 0 8px;
+                    font-size: 16px;
                 }
             }
     
@@ -503,16 +530,19 @@ ul, li, p {
                 padding: 8px 0;
                 border: 1px solid $gray;
                 margin-right: 16px;
+                width: 178px;
                 .second-list-skills__p {
                     color: $white;
                     font-size: 16px;
                     margin: 0;
                     padding: 0 8px;
-    
+                    padding: 0 8px 8px 8px;
+                    border-bottom: 1px solid $gray;
                 }
                 .second-list-skills__ul-2 {
                     color: $gray;
-                    padding: 0 8px;
+                    padding: 8px 8px 0 8px;
+                    font-size: 16px;
                 }
             }
     
@@ -520,16 +550,19 @@ ul, li, p {
                 padding: 8px 0;
                 border: 1px solid $gray;
                 margin-right: 16px;
-    
+                width: 196px;
                 .third-list-skills__p {
                     color: $white;
                     font-size: 16px;
                     margin: 0;
-                    padding: 0 8px;
+                    padding: 0 8px 8px 8px;
+                    border-bottom: 1px solid $gray;
                 }
                 .third-list-skills__ul-2 {
                     color: $gray;
-                    padding: 0 8px;
+                    padding: 8px 8px 0 8px;
+                    font-size: 16px;
+                    font-weight: 400;
                 }
             }
     
@@ -537,31 +570,36 @@ ul, li, p {
                 padding: 8px 0;
                 border: 1px solid $gray;
                 margin-right: 16px;
-    
+                width: 178px;
                 .fourth-list-skills__p {
                     color: $white;
                     font-size: 16px;
                     margin: 0;
                     padding: 0 8px;
+                    padding: 0 8px 8px 8px;
+                    border-bottom: 1px solid $gray;
                 }
                 .fourth-list-skills__ul-2 {
                     color: $gray;
-                    padding: 0 8px;
+                    padding: 8px 8px 0 8px;
                 }
             }
     
             .ul-skills__fifth-list-skills {
                 padding: 8px 0;
                 border: 1px solid $gray;
+                width: 178px;
                 .fifth-list-skills__p {
                     color: $white;
                     font-size: 16px;
                     margin: 0;
                     padding: 0 8px;
+                    padding: 0 8px 8px 8px;
+                    border-bottom: 1px solid $gray;
                 }
                 .fifth-list-skills__ul-2 {
                     color: $gray;
-                    padding: 0 8px;
+                    padding: 8px 8px 0 8px;
                 }
             }
         }
@@ -688,9 +726,6 @@ ul, li, p {
                 &:hover {
                     color: $white;
                 }
-                .list__img_1 {
-                    margin-right: 5px;
-                }
             }
 
             .list__a_second-link {
@@ -721,14 +756,22 @@ ul, li, p {
             justify-content: space-between;
             margin-bottom: 48px;
             .footer__email {
-                .footer__p_first {
-                    display: inline;
-                    margin-right: 24px;
+                .footer__email__img{
+                    position: relative;
+                    top: 3px;
+                    margin-right: 9px;
                     color: $white;
                 }
-                .footer__p_second {
+                .footer__p_first {
+                    display: inline;
+                    margin-right: 15px;
+                    color: $white;
+                    text-decoration: none;
+                }
+                .footer__a_second {
                     display: inline;
                     color: $gray;
+                    text-decoration: none;
                 }
                 .footer__p_third {
                     margin-top: 16px;
