@@ -646,7 +646,6 @@ ul, li, p {
 .contacts .wrapper__aside .contacts__aside {
   border: 1px solid #ABB2BF;
   padding: 16px;
-  position: relative;
 }
 .contacts .wrapper__aside .contacts__aside .aside__p {
   margin-bottom: 16px;
@@ -670,9 +669,6 @@ ul, li, p {
 }
 .contacts .wrapper__aside .contacts__aside .list__a_second-link:hover {
   color: #FFFFFF;
-}
-.contacts .wrapper__aside .contacts__aside .list__a_second-link .list__img_2 {
-  margin-right: 5px;
 }
 
 .wrapper__footer {

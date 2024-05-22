@@ -24,6 +24,10 @@ ul, li, p {
   color: #FFFFFF;
 }
 
+.white-p {
+  color: #FFFFFF;
+}
+
 .white__always {
   color: #FFFFFF;
 }
@@ -119,4 +123,226 @@ ul, li, p {
   font-size: 16px;
   color: #ABB2BF;
   padding: 0;
+}
+
+.about-me {
+  margin-top: 114px;
+  margin-bottom: 8px;
+}
+.about-me .about-me__header-2 {
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.about-me .about-me__p {
+  color: #ABB2BF;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.desc {
+  display: flex;
+  align-items: center;
+  margin-bottom: 112px;
+}
+.desc .desc__text {
+  width: 515px;
+  margin-right: 170px;
+}
+.desc .desc__text .desc__text__p {
+  color: #ABB2BF;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+}
+.skills {
+  margin-bottom: 83px;
+}
+.skills .skills__header .header-2 {
+  color: #FFFFFF;
+  margin-bottom: 48px;
+  font-size: 32px;
+  font-weight: 500;
+}
+.skills .skills-section-content .skills-section__ul-skills {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+.skills .skills-section-content .skills-section__ul-skills .ul-skills__first-list-skills {
+  padding: 8px 0;
+  border: 1px solid #ABB2BF;
+  margin-right: 16px;
+}
+.skills .skills-section-content .skills-section__ul-skills .ul-skills__first-list-skills .first-list-skills__p {
+  color: #FFFFFF;
+  font-size: 16px;
+  margin: 0;
+  padding: 0 8px 8px 8px;
+  border-bottom: 1px solid #ABB2BF;
+}
+.skills .skills-section-content .skills-section__ul-skills .ul-skills__first-list-skills .first-list-skills__ul-2 {
+  color: #ABB2BF;
+  padding: 8px 8px 0 8px;
+  font-size: 16px;
+}
+.skills .skills-section-content .skills-section__ul-skills .ul-skills__first-list-skills .first-list-skills__ul-2 li:first-child {
+  margin-bottom: 5px;
+}
+.skills .skills-section-content .skills-section__ul-skills .ul-skills__second-list-skills {
+  padding: 8px 0;
+  border: 1px solid #ABB2BF;
+  margin-right: 16px;
+  min-width: 192px;
+}
+.skills .skills-section-content .skills-section__ul-skills .ul-skills__second-list-skills .second-list-skills__p {
+  color: #FFFFFF;
+  font-size: 16px;
+  margin: 0;
+  padding: 0 8px;
+  padding: 0 8px 8px 8px;
+  border-bottom: 1px solid #ABB2BF;
+}
+.skills .skills-section-content .skills-section__ul-skills .ul-skills__second-list-skills .second-list-skills__ul-2 {
+  color: #ABB2BF;
+  padding: 8px 8px 0 8px;
+  font-size: 16px;
+}
+.skills .skills-section-content .skills-section__ul-skills .ul-skills__second-list-skills .second-list-skills__ul-2 li:first-child {
+  margin-bottom: 5px;
+}
+.skills .skills-section-content .skills-section__ul-skills .ul-skills__third-list-skills {
+  padding: 8px 0;
+  border: 1px solid #ABB2BF;
+  margin-right: 16px;
+}
+.skills .skills-section-content .skills-section__ul-skills .ul-skills__third-list-skills .third-list-skills__p {
+  color: #FFFFFF;
+  font-size: 16px;
+  margin: 0;
+  padding: 0 8px 8px 8px;
+  border-bottom: 1px solid #ABB2BF;
+}
+.skills .skills-section-content .skills-section__ul-skills .ul-skills__third-list-skills .third-list-skills__ul-2 {
+  color: #ABB2BF;
+  padding: 8px 8px 0 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.skills .skills-section-content .skills-section__ul-skills .ul-skills__third-list-skills .third-list-skills__ul-2 li:not(:last-child) {
+  margin-bottom: 5px;
+}
+.skills .skills-section-content .skills-section__ul-skills .ul-skills__fourth-list-skills {
+  padding: 8px 0;
+  border: 1px solid #ABB2BF;
+  margin-right: 16px;
+}
+.skills .skills-section-content .skills-section__ul-skills .ul-skills__fourth-list-skills .fourth-list-skills__p {
+  color: #FFFFFF;
+  font-size: 16px;
+  margin: 0;
+  padding: 0 8px;
+  padding: 0 8px 8px 8px;
+  border-bottom: 1px solid #ABB2BF;
+}
+.skills .skills-section-content .skills-section__ul-skills .ul-skills__fourth-list-skills .fourth-list-skills__ul-2 {
+  color: #ABB2BF;
+  padding: 8px 22px 0 8px;
+}
+.skills .skills-section-content .skills-section__ul-skills .ul-skills__fourth-list-skills .fourth-list-skills__ul-2 li:first-child {
+  margin-bottom: 5px;
+}
+.skills .skills-section-content .skills-section__ul-skills .ul-skills__fifth-list-skills {
+  padding: 8px 0;
+  border: 1px solid #ABB2BF;
+}
+.skills .skills-section-content .skills-section__ul-skills .ul-skills__fifth-list-skills .fifth-list-skills__p {
+  color: #FFFFFF;
+  font-size: 16px;
+  margin: 0;
+  padding: 0 8px;
+  padding: 0 8px 8px 8px;
+  border-bottom: 1px solid #ABB2BF;
+}
+.skills .skills-section-content .skills-section__ul-skills .ul-skills__fifth-list-skills .fifth-list-skills__ul-2 {
+  color: #ABB2BF;
+  padding: 8px 8px 0 8px;
+}
+.skills .skills-section-content .skills-section__ul-skills .ul-skills__fifth-list-skills .fifth-list-skills__ul-2 li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.my-fun-facts {
+  margin-bottom: 162px;
+}
+.my-fun-facts .header__wrapper .my-fun-facts__h2 {
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 26px;
+}
+.my-fun-facts .my-fun-facts__text {
+  display: flex;
+}
+.my-fun-facts .my-fun-facts__text .text__desc {
+  margin-right: 156px;
+  width: 605px;
+}
+.my-fun-facts .my-fun-facts__text .text__desc > p {
+  display: inline-block;
+  border: 1px solid #ABB2BF;
+  padding: 8px;
+  color: #ABB2BF;
+  margin-bottom: 16px;
+}
+.my-fun-facts .my-fun-facts__text .text__desc .desc__list {
+  margin: 0;
+  padding: 0;
+}
+.wrapper__footer {
+  border-top: 1px solid #FFFFFF;
+}
+.wrapper__footer .footer {
+  margin: 32px 0;
+}
+.wrapper__footer .footer .content__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+.wrapper__footer .footer .content__footer .footer__email .footer__email__img {
+  position: relative;
+  top: 3px;
+  margin-right: 9px;
+  color: #FFFFFF;
+}
+.wrapper__footer .footer .content__footer .footer__email .footer__p_first {
+  display: inline;
+  margin-right: 15px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.wrapper__footer .footer .content__footer .footer__email .footer__a_second {
+  display: inline;
+  color: #ABB2BF;
+  text-decoration: none;
+}
+.wrapper__footer .footer .content__footer .footer__email .footer__p_third {
+  margin-top: 16px;
+  color: #FFFFFF;
+}
+.wrapper__footer .footer .content__footer .media__links .footer__h3 {
+  color: #FFFFFF;
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.wrapper__footer .footer .footer__wrapper-text {
+  display: flex;
+  justify-content: center;
+}
+.wrapper__footer .footer .footer__wrapper-text .footer__p_fourth {
+  color: #ABB2BF;
 }/*# sourceMappingURL=about-me.css.map */

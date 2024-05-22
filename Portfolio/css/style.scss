@@ -703,7 +703,6 @@ ul, li, p {
     .wrapper__aside {
         display: flex;
         justify-content: space-between;
-        // height: 141px;
         .contacts__p {
             color: $gray;
             font-size: 16px;
@@ -713,7 +712,6 @@ ul, li, p {
         .contacts__aside {
             border: 1px solid $gray;
             padding: 16px;
-            position: relative;
             .aside__p {
                 margin-bottom: 16px;
                 color: $white;
@@ -736,9 +734,6 @@ ul, li, p {
                 align-items: center;
                 &:hover {
                     color: $white;
-                }
-                .list__img_2 {
-                    margin-right: 5px;
                 }
             }
         }
