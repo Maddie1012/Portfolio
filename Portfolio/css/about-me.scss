@@ -4,42 +4,27 @@ $gray: #ABB2BF;
 $white: #FFFFFF;
 $purple: #C778DD;
 
+@mixin reset {
+    margin: 0;
+    padding: 0;
+}
 
 * {
     font-family: "Fira Code";
     list-style-type: none;
 }
 
-body {
-    margin: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-}
-
-ul, li, p {
-    margin: 0;
+body, h1, h2, h3, h4, h5, h6, ul, li, p {
+    @include reset;
 }
 
 .purple {
     color: $purple;
 }
 
-.white:hover {
+.white-p, .white__always, .white:hover {
     color: $white;
 }
-
-.white-p {
-    color: $white;
-}
-
-.white__always {
-    color: $white;
-}
-
-
-
 
 .icon-Discord::before {
     font-size: 32px;
@@ -57,16 +42,14 @@ ul, li, p {
     color: $white;
 }
 
-
-
 .body-content {
     background-color: #282C33;
-    padding: 0;
-    margin: 0;
-    position: relative;
 }
 
-
+.wrapper {
+    margin: 0 auto;
+    width: 1024px;
+}
 
 .home {
     position: fixed;
@@ -74,7 +57,7 @@ ul, li, p {
     background-color: #282C33;
     z-index: 3;
     margin-left: 17px;
-    .home__hr {
+    .home__separator {
         margin-top: 0;
         margin-bottom: 14px;
         width: 1px;
@@ -82,18 +65,10 @@ ul, li, p {
         border: none;
         background: $gray;
     }
-    .home__ul {
+    .home__social-links {
         padding: 5px;
     }
 }
-
-
-
-.wrapper {
-    margin: 0 auto;
-    width: 1024px;
-}
-
 
 .header {
     position: fixed;
@@ -103,39 +78,31 @@ ul, li, p {
     width: 1024px;
     box-shadow: 0px 4px 4px rgba($color: #000000, $alpha: 25%);
     height: 61px;
-    .header__a {
+    .header__link {
         color: $white;
         margin: 0 0 0 0;
         position: relative;
         bottom: -30px;
         text-decoration: none;
+        .header__icon {
+            margin: 0 8px 0 0;
+            position: relative;
+            top: 3px;
+        }
     }
+}
 
-    .header__p__image {
-        margin: 0 8px 0 0;
-        position: relative;
-        top: 3px;
-    }
-
-    .header__nav{
-        display: flex;
-        justify-content: end;
-    }
-
-    .header__nav__links {
+.header__nav{
+    display: flex;
+    justify-content: end;
+    .header__links {
         display: flex;
         margin: 9px;
-        a {
-            color: $gray;
-            text-decoration: none;
-        }
-        
-        li {
+        .header__item {
             padding-right: 32px;
         }
     }
-
-    .header__option {
+    .header__select {
         border: 0 solid #000;
         background-color: #282C33;
         font-size: 16px;
@@ -144,284 +111,163 @@ ul, li, p {
     }
 }
 
-.header > {
-    display: flex;
-    align-items: flex-end;
+.header__linkk {
+    color: $gray;
+    text-decoration: none;
 }
-
-
-
 
 .about-me {
     margin-top: 114px;
     margin-bottom: 8px;
-    .about-me__header-2 {
+    .about-me__title {
         color: $white;
         font-size: 32px;
         font-weight: 600;
         margin-bottom: 14px;
     }
-    .about-me__p {
+    .about-me__text {
         color: $gray;
         font-size: 16px;
         font-weight: 400;
     }
 }
 
-
-
-.desc {
+.description {
     display: flex;
     align-items: center;
     margin-bottom: 112px;
-    .desc__text {
+    .description__content {
         width: 515px;
         margin-right: 170px;
-        .desc__text__p {
+        .description__paragraph {
             color: $gray;
             font-size: 16px;
             line-height: 25px;
             font-weight: 400;
         }
     }
-    .desc__img {
-
-    }
 }
-
-
 
 .skills {
     margin-bottom: 83px;
     .skills__header {
-        .header-2 {
+        .skills__title {
             color: $white;
             margin-bottom: 48px;
             font-size: 32px;
             font-weight:500;
         }
     }
-    .skills-section-content {
-        .skills-section__ul-skills {
+    .skills__content {
+        .skills__list {
             display: flex;
             align-items: flex-start;
             margin: 0;
             padding: 0;
-            .ul-skills__first-list-skills {
-                padding: 8px 0;
-                border: 1px solid $gray;
-                margin-right: 16px;
-                .first-list-skills__p {
-                    color: $white;
-                    font-size: 16px;
-                    margin: 0;
-                    padding: 0 8px 8px 8px;
-                    border-bottom: 1px solid $gray;
-                }
-                .first-list-skills__ul-2 {
-                    color: $gray;
-                    padding: 8px 8px 0 8px;
-                    font-size: 16px;
-                    li {
-                        &:first-child {
-                            margin-bottom: 5px;
-                        }
-                    }
-                }
-            }
-    
-            .ul-skills__second-list-skills {
-                padding: 8px 0;
-                border: 1px solid $gray;
-                margin-right: 16px;
-                min-width: 192px;
-                .second-list-skills__p {
-                    color: $white;
-                    font-size: 16px;
-                    margin: 0;
-                    padding: 0 8px;
-                    padding: 0 8px 8px 8px;
-                    border-bottom: 1px solid $gray;
-                }
-                .second-list-skills__ul-2 {
-                    color: $gray;
-                    padding: 8px 8px 0 8px;
-                    font-size: 16px;
-                    li {
-                        &:first-child {
-                            margin-bottom: 5px;
-                        }
-                    }
-                }
-            }
-    
-            .ul-skills__third-list-skills {
-                padding: 8px 0;
-                border: 1px solid $gray;
-                margin-right: 16px;
-                .third-list-skills__p {
-                    color: $white;
-                    font-size: 16px;
-                    margin: 0;
-                    padding: 0 8px 8px 8px;
-                    border-bottom: 1px solid $gray;
-                }
-                .third-list-skills__ul-2 {
-                    color: $gray;
-                    padding: 8px 8px 0 8px;
-                    font-size: 16px;
-                    font-weight: 400;
-                    li {
-                        &:not(:last-child) {
-                            margin-bottom: 5px;
-                        }
-                    }
-                }
-            }
-    
-            .ul-skills__fourth-list-skills {
-                padding: 8px 0;
-                border: 1px solid $gray;
-                margin-right: 16px;
-                .fourth-list-skills__p {
-                    color: $white;
-                    font-size: 16px;
-                    margin: 0;
-                    padding: 0 8px;
-                    padding: 0 8px 8px 8px;
-                    border-bottom: 1px solid $gray;
-                }
-                .fourth-list-skills__ul-2 {
-                    color: $gray;
-                    padding: 8px 22px 0 8px;
-                    li {
-                        &:first-child {
-                            margin-bottom: 5px;
-                        }
-                    }
-                }
-            }
-    
-            .ul-skills__fifth-list-skills {
-                padding: 8px 0;
-                border: 1px solid $gray;
-                .fifth-list-skills__p {
-                    color: $white;
-                    font-size: 16px;
-                    margin: 0;
-                    padding: 0 8px;
-                    padding: 0 8px 8px 8px;
-                    border-bottom: 1px solid $gray;
-                }
-                .fifth-list-skills__ul-2 {
-                    color: $gray;
-                    padding: 8px 8px 0 8px;
-                    li {
-                        &:not(:last-child) {
-                            margin-bottom: 5px;
-                        }
-                    }
-                }
+        }
+    }
+}
+
+.skills__item {
+    padding: 8px 0;
+    border: 1px solid $gray;
+    margin-right: 16px;
+    &:last-child {
+        margin-right: 0;
+    }
+    .skills__category {
+        color: $white;
+        font-size: 16px;
+        margin: 0;
+        padding: 0 8px 8px 8px;
+        border-bottom: 1px solid $gray;
+    }
+    .skills__sublist {
+        color: $gray;
+        padding: 8px 8px 0 8px;
+        font-size: 16px;
+        .skills__subitem{
+            &:not(:last-child){
+                margin-bottom: 5px;
             }
         }
     }
 }
 
-
-
-.my-fun-facts {
+.fun-facts {
     margin-bottom: 162px;
-    .header__wrapper {
-        .my-fun-facts__h2 {
+    .fun-facts__header {
+        .fun-facts__title {
             color: $white;
             font-size: 32px;
             font-weight: 400;
             margin-bottom: 26px;
         }
     }
-    .my-fun-facts__text {
-        display: flex;
-        .text__desc {
-            margin-right: 156px;
-            width: 605px;
-            & > p {
-                display: inline-block;
-                border: 1px solid $gray;
-                padding: 8px;
-                color: $gray;
-                margin-bottom: 16px;
-            }
-            .desc__list {
-                margin: 0;
-                padding: 0;
-            }
-        }
-    }
-    .my-fun-facts__decor {
-        .decor__img {
+}
 
+.fun-facts__content {
+    display: flex;
+    .fun-facts__description {
+        margin-right: 156px;
+        width: 605px;
+        .fun-facts__fact {
+            display: inline-block;
+            border: 1px solid $gray;
+            padding: 8px;
+            color: $gray;
+            margin-bottom: 16px;
         }
     }
 }
 
-
-
-.wrapper__footer {
+.footer-wrapper {
     border-top: 1px solid $white;
     .footer {
         margin: 32px 0;
-        .content__footer {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 48px;
-            .footer__email {
-                .footer__email__img{
-                    position: relative;
-                    top: 3px;
-                    margin-right: 9px;
-                    color: $white;
-                }
-                .footer__p_first {
-                    display: inline;
-                    margin-right: 15px;
-                    color: $white;
-                    text-decoration: none;
-                }
-                .footer__a_second {
-                    display: inline;
-                    color: $gray;
-                    text-decoration: none;
-                }
-                .footer__p_third {
-                    margin-top: 16px;
-                    color: $white;
-                }
-            }
-            .media__links {
-                .footer__h3 {
-                    color: $white;
-                    margin-bottom: 12px;
-                    font-size: 24px;
-                    font-weight: 500;
-                }
-                .footer__img_first {
-
-                }
-                .footer__img_second {
-
-                }
-                .footer__img_third {
-
-                }
-            }
-        }
-        .footer__wrapper-text {
+        .footer__bottom {
             display: flex;
             justify-content: center;
-            .footer__p_fourth {
+            .footer__copyright {
                 color: $gray;
             }
         }
     }
-    
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    .footer__contact {
+        .footer__name {
+            display: inline;
+            margin-right: 15px;
+            color: $white;
+            text-decoration: none;
+            .footer__icon{
+                position: relative;
+                top: 3px;
+                margin-right: 9px;
+                color: $white;
+            }
+        }
+        .footer__email {
+            display: inline;
+            color: $gray;
+            text-decoration: none;
+        }
+        .footer__role {
+            margin-top: 16px;
+            color: $white;
+        }
+    }
+    .footer__media {
+        .footer__media-title {
+            color: $white;
+            margin-bottom: 12px;
+            font-size: 24px;
+            font-weight: 500;
+        }
+    }
 }
