@@ -8,22 +8,23 @@
     <title>Home</title>
 </head>
 <body class="body-content">
-    <div class="social-links">
-        <hr class="social-links__hr">
-        <ul class="social-links__list">
-            <li>
-                <a href="#">
-                    <img src="img/Github.svg" alt="Github">
+
+    <div class="home">
+        <hr class="home__separator">
+        <ul class="home__social-links">
+            <li class="home__social-item">
+                <a class="home__social-link" href="#">
+                    <img class="home__social-icon" src="img/Github.svg" alt="Github">
                 </a>
             </li>
-            <li>
-                <a href="#">
-                    <img src="img/Dribble.svg" alt="Dribble">
+            <li class="home__social-item">
+                <a class="home__social-link" href="#">
+                    <img class="home__social-icon" src="img/Dribble.svg" alt="Dribble">
                 </a>
             </li>
-            <li>
-                <a href="#">
-                    <img src="img/Figma.svg" alt="Figma">
+            <li class="home__social-item">
+                <a class="home__social-link" href="#">
+                    <img class="home__social-icon" src="img/Figma.svg" alt="Figma">
                 </a>
             </li>
         </ul>
@@ -32,258 +33,241 @@
     <div class="wrapper">
         <header class="header">
                 <a class="header__link" href="#">
-                    <img class="header__image" src="./img/Union.svg" alt="Лого">Elias
+                    <img class="header__icon" src="./img/Union.svg" alt="иконка">Elias
                 </a>
                 <nav class="header__nav">
-                    <ul class="header__nav__list">
-                        <li>
-                            <a href="index.html"><span class="purple">#</span><span class="white__always">home</span></a>
+                    <ul class="header__links">
+                        <li class="header__item">
+                            <a href="index.html" class="header__linkk"><span class="purple">#</span><span class="white__always">home</span></a>
                         </li>
-                        <li>
-                            <a href="projects.html"><span class="purple">#</span><span class="white">works</span></a>
+                        <li class="header__item">
+                            <a href="projects.html" class="header__linkk"><span class="purple">#</span><span class="white">works</span></a>
                         </li>
-                        <li>
-                            <a href="about-me.html"><span class="purple">#</span><span class="white">about-me</span></a>
+                        <li class="header__item">
+                            <a href="about-me.html" class="header__linkk"><span class="purple">#</span><span class="white">about-me</span></a>
                         </li>
-                        <li>
-                            <a href="contacts.html"><span class="purple">#</span><span class="white">contacts</span></a>
+                        <li class="header__item">
+                            <a href="contacts.html" class="header__linkk"><span class="purple">#</span><span class="white">contacts</span></a>
                         </li>
                     </ul>
-                <select class="header__option" name="" id="">
-                    <option value="EN">EN</option>
-                    <option value="RU">RU</option>
-                </select>
+                    <select class="header__select" name="" id="">
+                        <option value="EN">EN</option>
+                        <option value="RU">RU</option>
+                    </select>
                 </nav>
         </header>
     </div>
 
-
-
-            <div class="wrapper">
-                <section class="main-title">
-                    <div class="main-title__text">
-                        <h1 class="main-title__header">Elias is a <span class="purple">web designer</span> and <span class="purple">front-end developer</span></h1>
-
-                        <p class="main-title__paragraph">He crafts responsive websites where technologies meet creativity</p>
-
-                        <a class="main-title__link" href="#">Contact me !!</a>
-                    </div>
-
-                    <div class="main-title__photo">
-                        <img class="main-title__image" src="img/Group 46.png" alt="Фото">
-                        <p class="main-title__status">
-                            <img src="img/Rectangle_27.svg" alt="квадрат" class="main-title__status__img">Currently working on
-                            <a href="#" class="main-title__status__link"> <span class=" break"></span>Portfolio</a>
-                        </p>
-                    </div>
-                </section>
+    <div class="wrapper">
+        <section class="intro">
+            <div class="intro__content">
+                <h1 class="intro__title">Elias is a <span class="purple">web designer</span> and <span class="purple">front-end developer</span></h1>
+                <p class="intro__description">He crafts responsive websites where technologies meet creativity</p>
+                <a class="intro__contact-link" href="#">Contact me !!</a>
             </div>
-
-            <div class="modal">
-                <div class="modal-content">
-                    <h2 class="modal-header">Модальное окно</h2>
-                    <div class="modal-container">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab expedita iusto iure voluptas, consequatur, quasi accusamus nemo repellat temporibus, voluptates culpa quod! Dolorum mollitia tenetur suscipit iusto culpa ipsum nemo!</p>
-                    </div>
-                    <button class="modal-button">Закрыть</button>
-                </div>
+            <div class="intro__image-container">
+                <img class="intro__photo" src="img/Group 46.png" alt="Фото">
+                <p class="intro__status">
+                    <img src="img/Rectangle_27.svg" alt="квадрат" class="intro__status-icon">Currently working on
+                    <a href="#" class="intro__status-link"> <span class="break"></span>Portfolio</a>
+                </p>
             </div>
- 
-            <div class="wrapper">
-                <section class="quote-section">
-                    <div class="quote-section__bquote">
-                        <p class="bquote__paragraph">With great power comes great electricity bill</p>
-                        <cite class="bquote__cite">- Dr. Who</cite>
-                    </div>
-                </section>
+        </section>
+    </div>
+
+    <div class="modal">
+        <div class="modal-content">
+            <h2 class="modal-title">Модальное окно</h2>
+            <div class="modal-container">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab expedita iusto iure voluptas, consequatur, quasi accusamus nemo repellat temporibus, voluptates culpa quod! Dolorum mollitia tenetur suscipit iusto culpa ipsum nemo!</p>
             </div>
+            <button class="modal-button">Закрыть</button>
+        </div>
+    </div>
 
-            <div class="wrapper">
-                <section class="projects">
-                    <div class="projects__head">
-                        <h2 class="projects__header">
-                            <span class="purple">#</span>projects
-                        </h2>
-                        <hr>
-                        <a href="projects.html" class="projects__a">View all ~~></a>
-                    </div>
-                    <ul class="projects__cards-list">
-                        <li class="cards__first-item">
-                            <img class="first-item__img" src="img/Rectangle_22.jpg" alt="Проект_1">
-                            <ul class="first-item__list">
-                                <li>HTML SCSS Python Flask</li>
-                            </ul>
+    <div class="wrapper">
+        <section class="quote">
+            <div class="quote__content">
+                <p class="quote__text">With great power comes great electricity bill</p>
+                <cite class="quote__author">- Dr. Who</cite>
+            </div>
+        </section>
+    </div>
 
-                            <div class="first-item__container">
-                                <h3 class="first-item__header">ChertNodes</h3>
-                                <p class="first-item__paragraph">Minecraft servers hosting</p>
-                                <button class="first-item__first-button">Live <~></button>
-                                <button class="first-item__second-button">Cached >=</button>
-                            </div>
-                        </li>
-
-                        <li class="cards__second-item">
-                            <img class="second-item__img" src="img/Rectangle 22.png" alt="Проект_2">
-                            <ul class="second-item__list">
-                                <li>React Express Discord.js Node.js</li> 
-                                <li>HTML SCSS Python Flask</li>
-                            </ul>
-                            <div class="second-item__container">
-                                <h3 class="second-item__header">ProtectX</h3>
-                                <p class="second-item__paragraph">Discord anti-crash bot</p>
-                                <button class="second-item__button">Live <~></button>
-                            </div>
-                        </li>
-
-                        <li class="cards__third-item">
-                            <img class="third-item__img" src="img/Rectangle 22 (1).png" alt="Проект_3">
-                            <ul class="third-item__list">
-                                <li>CSS Express Node.js</li>
-                            </ul>
-                            <div class="third-item__container">
-                                <h3 class="third-item__header">Kahoot Answers Viewer</h3>
-                                <p class="third-item__paragraph">Get answers to your kahoot quiz</p>
-                                <button class="third-item__button">Live <~></button>
-                            </div>
-                        </li>
+    <div class="wrapper">
+        <section class="projects">
+            <div class="projects__header">
+                <h2 class="projects__title">
+                    <span class="purple">#</span>projects
+                </h2>
+                <hr class="projects__separator">
+                <a href="projects.html" class="projects__view-all">View all ~~></a>
+            </div>
+            <ul class="projects__list">
+                <li class="projects__item projects__item--first">
+                    <img class="projects__image" src="img/Rectangle_22.jpg" alt="Проект_1">
+                    <ul class="projects__tech-list">
+                        <li class="projects__tech-item">HTML SCSS Python Flask</li>
                     </ul>
-                </section>
-            </div>
-
-            <div class="wrapper">
-                <section class="skills-section">
-                    <div class="skills-section__container">
-                        <h2 class="skills-section__header"> <span class="purple">#</span>skills</h2>
-                    <hr class="skills-section__hr">
+                    <div class="projects__content">
+                        <h3 class="projects__title">ChertNodes</h3>
+                        <p class="projects__description">Minecraft servers hosting</p>
+                        <button class="projects__button projects__button--live">Live <~></button>
+                        <button class="projects__button projects__button--cached">Cached >=</button>
                     </div>
-                    
-                    <div class="skills-section-content">
-                        <img class="skills-section__img" src="img/Group 36.png" alt="">
+                </li>
+                <li class="projects__item projects__item--second">
+                    <img class="projects__image" src="img/Rectangle 22.png" alt="Проект_2">
+                    <ul class="projects__tech-list">
+                        <li class="projects__tech-item">React Express Discord.js Node.js</li> 
+                        <li class="projects__tech-item">HTML SCSS Python Flask</li>
+                    </ul>
+                    <div class="projects__content">
+                        <h3 class="projects__title">ProtectX</h3>
+                        <p class="projects__description">Discord anti-crash bot</p>
+                        <button class="projects__button projects__button--live">Live <~></button>
+                    </div>
+                </li>
+                <li class="projects__item projects__item--third">
+                    <img class="projects__image" src="img/Rectangle 22 (1).png" alt="Проект_3">
+                    <ul class="projects__tech-list">
+                        <li class="projects__tech-item">CSS Express Node.js</li>
+                    </ul>
+                    <div class="projects__content">
+                        <h3 class="projects__title">Kahoot Answers Viewer</h3>
+                        <p class="projects__description">Get answers to your kahoot quiz</p>
+                        <button class="projects__button projects__button--live">Live <~></button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
 
-                        <ul class="skills-section__list-skills">
-                            <li class="list-skills__first-item-skills">
-                                <p class="first-item-skills__paragraph">Languages</p>
-                                <ul class="first-item-skills__language-list">
-                                    <li>TypeScript Lua</li>
-                                    <li>Python JavaScript</li>
-                                </ul>
-                            </li>
-
-                            <li class="item-skills__second-item-skills">
-                                <p class="second-item-skills__paragraph">Databases</p>
-                                <ul class="second-item-skills__language-list">
-                                    <li>SQLite PostgreSQL</li>
-                                    <li>Mongo</li>
-                                </ul>
-                            </li>
-
-                            <li class="item-skills__third-item-skills">
-                                <p class="third-item-skills__paragraph">Tools</p>
-                                <ul class="third-item-skills__language-list">
-                                    <li>VSCode Neovim Linux</li>
-                                    <li>Figma XFCE Arch</li>
-                                    <li>Git Font Awesome</li>
-                                </ul>
-                            </li>
-
-                            <li class="item-skills__fourth-item-skills">
-                                <p class="fourth-item-skills__paragraph">Others</p>
-                                <ul class="fourth-item-skills__language-list">
-                                    <li>HTML CSS EJS SCSS</li>
-                                    <li>REST Jinja</li>
-                                </ul>
-                            </li>
-
-                            <li class="item-skills__fifth-item-skills">
-                                <p class="fifth-item-skills__paragraph">Frameworks</p>
-                                <ul class="fifth-item-skills__language-list">
-                                    <li>React Vue</li>
-                                    <li></li>
-                                    <li>Disnake Discord.js</li>
-                                    <li>Flask Express.js</li>
-                                </ul>
-                            </li>
+    <div class="wrapper">
+        <section class="skills">
+            <div class="skills__header-container">
+                <h2 class="skills__title"> <span class="purple">#</span>skills</h2>
+            <hr class="skills__separator">
+            </div>
+            <div class="skills__content">
+                <img class="skills__image" src="img/Group 36.png" alt="">
+                <ul class="skills__list">
+                    <li class="skills__item skills__item--languages">
+                        <p class="skills__category">Languages</p>
+                        <ul class="skills__sublist">
+                            <li class="skills__subitem">TypeScript Lua</li>
+                            <li class="skills__subitem">Python JavaScript</li>
                         </ul>
-                    </div>
-                </section>
+                    </li>
+                    <li class="skills__item skills__item--databases">
+                        <p class="skills__category">Databases</p>
+                        <ul class="skills__sublist">
+                            <li class="skills__subitem">SQLite PostgreSQL</li>
+                            <li class="skills__subitem">Mongo</li>
+                        </ul>
+                    </li>
+                    <li class="skills__item skills__item--tools">
+                        <p class="skills__category">Tools</p>
+                        <ul class="skills__sublist">
+                            <li class="skills__subitem">VSCode Neovim Linux</li>
+                            <li class="skills__subitem">Figma XFCE Arch</li>
+                            <li class="skills__subitem">Git Font Awesome</li>
+                        </ul>
+                    </li>
+                    <li class="skills__item skills__item--others">
+                        <p class="skills__category">Others</p>
+                        <ul class="skills__sublist">
+                            <li class="skills__subitem">HTML CSS EJS SCSS</li>
+                            <li class="skills__subitem">REST Jinja</li>
+                        </ul>
+                    </li>
+                    <li class="skills__item skills__item--frameworks">
+                        <p class="skills__category">Frameworks</p>
+                        <ul class="skills__sublist">
+                            <li class="skills__subitem">React Vue</li>
+                            <li class="skills__subitem">Disnake Discord.js</li>
+                            <li class="skills__subitem">Flask Express.js</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
+        </section>
+    </div>
 
-            <div class="wrapper">
-                <section class="about-me__section">
-                    <div class="about-me__first-container">
-                        <h2 class="about-me__header"><span class="purple">#</span>about-me</h2>
-                        <hr class="about-me__hr">
-                    </div>
-                    
-                    <div class="about-me__second-container">
-                        <div class="about-me__content">
-                            <p class="about-me__paragraph">Hello, i’m Elias!
-                                <br>
-                                <br>
-                                I’m a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences. 
-                                <br>
-                                <br>
-                                Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.</p>
-                                
-                            <button class="about-me__button">Read more -></button>
-                        </div>
-
-                        <img class="about-me__img" src="img/Group 50.png" alt="Фото">
-                    </div>
-                </section>
+    <div class="wrapper">
+        <section class="about-me">
+            <div class="about-me__header-container">
+                <h2 class="about-me__title"><span class="purple">#</span>about-me</h2>
+                <hr class="about-me__separator">
             </div>
+            
+            <div class="about-me__content-container">
+                <div class="about-me__text">
+                    <p class="about-me__text-paragraph">Hello, i’m Elias!
+                        <br>
+                        <br>
+                        I’m a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences. 
+                        <br>
+                        <br>
+                        Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.</p>
+                        
+                    <button class="about-me__read-more">Read more -></button>
+                </div>
 
-            <div class="wrapper">
-                <section class="contacts__section">
-                    <div class="contacts__container">
-                        <h2 class="contacts__header"><span class="purple">#</span>contacts</h2>
-                        <hr class="contacts__header__hr">
-                    </div>
-                    
-                    <div class="wrapper__aside">
-                        <p class="contacts__paragraph">I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me</p>
-
-                        <aside class="contacts__aside">
-                            <p class="aside__paragraph">Message me here</p>
-                                <a href="#" class="first-link icon-Discord">
-                                    <p>!Elias#3519</p>
-                                </a>
-                                <br>
-                                <a href="#" class="second-link icon-Email">
-                                    <p>elias@elias.me</p>
-                                </a>
-                        </aside>
-                    </div>
-                    
-                </section>
+                <img class="about-me__image" src="img/Group 50.png" alt="Фото">
             </div>
+        </section>
+    </div>
 
-    <div class="wrapper__footer">
+    <div class="wrapper">
+        <section class="contacts">
+            <div class="contacts__header-container">
+                <h2 class="contacts__title"><span class="purple">#</span>contacts</h2>
+                <hr class="contacts__separator">
+            </div>
+            <div class="contacts__content-wrapper">
+                <p class="contacts__main-paragraph">I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me</p>
+                <aside class="contacts__aside">
+                    <p class="contacts__aside-paragraph">Message me here</p>
+                        <a href="#" class="contacts__aside-link icon-Discord">
+                            <p>!Elias#3519</p>
+                        </a>
+                        <br>
+                        <a href="#" class="contacts__aside-link icon-Email">
+                            <p>elias@elias.me</p>
+                        </a>
+                </aside>
+            </div>
+        </section>
+    </div>
+
+    <div class="footer-wrapper">
         <footer class="footer">
             <div class="wrapper">
-                <div class="content__footer">
-                    <div class="footer__email">
-                        <p class="footer__first-paragraph">
-                            <img class="footer__email__img" src="./img/Union.svg" alt="иконка">Elias
+                <div class="footer__content">
+                    <div class="footer__contact">
+                        <p class="footer__name">
+                            <img class="footer__icon" src="./img/Union.svg" alt="иконка">Elias
                         </p>
-                        <a href="#" class="footer__second-paragraph">elias@elias-dev.ml</a>
-                        <p class="footer__third-paragraph">Web designer and front-end developer</p>
+                        <a href="#" class="footer__email">elias@elias-dev.ml</a>
+                        <p class="footer__role">Web designer and front-end developer</p>
                     </div>
 
-                    <div class="media-links">
-                        <h3 class="media-links__header">Media</h3>
-                        <img class="media-links__first-img" src="img/Github.svg" alt="Github">
-                        <img class="media-links__second-img" src="img/Figma.svg" alt="Figma">
-                        <img class="media-links__third-img" src="img/Discord.svg" alt="Discord">
+                    <div class="footer__media">
+                        <h3 class="footer__media-title">Media</h3>
+                        <img class="footer__media-icon" src="img/Github.svg" alt="Github">
+                        <img class="footer__media-icon" src="img/Figma.svg" alt="Figma">
+                        <img class="footer__media-icon" src="img/Discord.svg" alt="Discord">
                     </div>
                 </div>
 
-                <div class="footer__wrapper-text">
-                    <p class="footer__wrapper-text__paragraph">© Copyright 2022. Made by Elias</p>
+                <div class="footer__bottom">
+                    <p class="footer__copyright">© Copyright 2022. Made by Elias</p>
                 </div>
             </div>
         </footer>
     </div>
+
     <script src="js/index.js"></script>
 </body>
 </html>

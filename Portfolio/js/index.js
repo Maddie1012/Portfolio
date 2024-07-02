@@ -1,4 +1,4 @@
-let contactBtn = document.querySelector('.main-title__link');
+let contactBtn = document.querySelector('.intro__contact-link');
 let modal = document.querySelector('.modal');
 let closeBtn = document.querySelector('.modal-button')
 
